@@ -1,0 +1,20 @@
+$class-name: item;
+
+@for $i from 1 through 4 {
+    .#{$class-name}-#{$i} {
+        width: 60px + $i;
+    }
+}
+
+$random: 5;
+
+h1 {
+    @if $random > 5 {
+        color: blue;
+    } @else if $random == 3 {
+        color: purple;
+    } @else {
+        color: orange;
+    }
+
+}
